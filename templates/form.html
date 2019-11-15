@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% block content1 %}
+<h1>検索内容選択フォーム</h1>
+<h3>NPB過去10年のデータから、任意の項目について、2019年上位n人の成績を一覧で出力します</h3>
+<h4>データ参照元(https://baseball-freak.com 様)</h4>
+<form action="" method="get">
+    {% csrf_token %}
+    <table>
+        {{form1.as_p}}
+        <tr>
+            <td colspan='2'><input type="submit" value="検索"></td>
+        </tr>
+    </table>
+</form>
+{% endblock %}

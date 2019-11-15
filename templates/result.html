@@ -1,0 +1,7 @@
+{% extends "main.html" %}
+{% block content1 %}
+<h1>検索結果</h1>
+<p><input type="button" value="検索へ戻る" onClick="location.href='http://127.0.0.1:8000/npb_stats'"></p>
+{{result | safe}}
+<p><input type="button" value="検索へ戻る" onClick="location.href='http://127.0.0.1:8000/npb_stats'"></p>
+{% endblock %}
